@@ -1,0 +1,44 @@
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 0;
+  background-color: var(--color-light);
+  font-family: var(--font-family);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @media only screen and (min-width: 1256px) {
+    max-width: 1256px;
+  }
+}
+
+.form-error {
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: #ff4d4f;
+  min-height: 20px;
+  padding-left: var(--spacing-md);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+
+  &--visible {
+    opacity: 1;
+  }
+}

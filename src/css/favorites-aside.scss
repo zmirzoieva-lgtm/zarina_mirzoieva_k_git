@@ -1,0 +1,149 @@
+.favorites-page {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.favorites-breadcrumbs {
+  margin-top: 90px;
+  margin-bottom: 32px;
+}
+
+.favorites-title {
+  font-family: var(--font-family);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 48px;
+  color: var(--color-dark);
+  
+  @media (max-width: 767px) {
+    font-size: 32px;
+  }
+}
+
+.favorites-container {
+  display: flex;
+  gap: 32px;
+
+  @media (max-width: 1439px) {
+    flex-direction: column;
+  }
+}
+
+
+.fav-aside {
+  width: 494px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-shrink: 0;
+
+  @media (max-width: 1439px) {
+    width: 100%;
+  }
+
+  &__quote {
+    background-color: var(--color-dark);
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--color-light);
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+
+    &-container { display: flex; gap: 12px; width: 100%; }
+    &-icon-runner { flex-shrink: 0; width: 34px; height: 32px; display: flex; align-items: center; justify-content: center; }
+    &-content { display: flex; flex-direction: column; width: 100%; overflow: hidden; }
+    &-header { display: flex; gap: 12px; margin-bottom: 8px; }
+    &-title { display: flex; justify-content: space-between; width: 100%; font-size: 24px; font-weight: 500; }
+    &-icon-mark { width: 24px; height: 24px; flex-shrink: 0; }
+    &-text { opacity: 0.6; font-size: 14px; line-height: 1.4; margin-bottom: 18px; }
+    &-author { margin-top: auto; font-size: 14px; }
+  }
+
+  &__row {
+    display: flex;
+    gap: 16px;
+    @media (max-width: 767px) { flex-direction: column; gap: 20px; }
+  }
+
+  &__norm {
+    background-color: var(--color-block-light);
+    border-radius: 20px;
+    padding: 25px;
+    width: 239px;
+    height: 141px;
+    display: flex;
+    flex-direction: column;
+
+
+    @media (max-width: 1439px) { width: 344px; }
+    @media (max-width: 767px) { width: 100%; height: 119px; padding: 20px; }
+
+    &-value { display: block; margin-top: 12px; font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 24px; line-height: 32px; color: var(--color-dark); }
+    &-label { display: block; margin-top: 6px; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 14px; color: rgba(36, 36, 36, 0.6); }
+  }
+
+  &__image-box {
+    width: 239px;
+    height: 141px;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+    @media (max-width: 1439px) { width: 344px; }
+    @media (max-width: 767px) { width: 100%; height: 119px; }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transform: scale(1.1);
+
+    
+
+  }
+}
+
+
+.favorites-cards-section {
+  flex-grow: 1;
+  display: flex;
+  align-items: center; 
+}
+
+
+.favorites-empty-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 180px; 
+
+  @media (max-width: 1439px) {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+}
+
+.favorites-empty-text {
+  max-width: 585px; 
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--color-dark);
+  opacity: 0.6;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    max-width: 335px;
+  }
+}
+
+.exercises__content__main__cards--exercises {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px 16px;
+  width: 100%;
+}
