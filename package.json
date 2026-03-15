@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/zarina_mirzoieva_k_git/",
     "preview": "vite preview"
   },
   "devDependencies": {
