@@ -1,3 +1,5 @@
+import './css/main.scss';
+
 import {
   loadExerciseCards,
   updateBreadcrumbs,
